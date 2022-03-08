@@ -22,31 +22,24 @@ function gacha_system() {
     if(i === 9) {
       if(random_num < 0.03) {
         result = "SSR"; // 3%
-        nth_list.textContent = result;
-        nth_list.className = result;
       }
       else {
         result = "SR"; // 97%
-        nth_list.textContent = result;
-        nth_list.className = result;
       }
     }
     else {
       if(random_num < 0.03) {
         result = "SSR"; // 3%
-        nth_list.textContent = result;
-        nth_list.className = result;
       }
       else if(random_num < 0.13) {
         result = "SR"; // 10%
-        nth_list.textContent = result;
-        nth_list.className = result;
       }
       else {
         result = "R"; // 87%
-        nth_list.textContent = result;
-        nth_list.className = result;
       }
     }
+    
+    nth_list.textContent = result;
+    nth_list.className = result;
   }
 }
